@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ListView items="{{ schedule }}" height="500" class="list-group">
+    <ListView.itemTemplate>
+        <StackLayout class="list-group-item">
+            <Label text="{{ date, date }}" 
+                   class="{{ isWorkDay ? 'text-green-600' : 'text-red-600' }} 
+                          {{ isTransitionDay ? 'font-bold' : '' }}" />
+            <Label text="{{ isWorkDay ? 'Work Day' : 'Off Day' }}" 
+                   class="text-sm text-gray-600" />
+        </StackLayout>
+    </ListView.itemTemplate>
+</ListView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" 
+      navigatingTo="navigatingTo">
+    <ActionBar title="Offshore Rotation Calendar" />
+    
+    <ScrollView>
+        <StackLayout>
+            <GridLayout rows="auto, *">
+                <StackLayout row="0">
+                    <ns:RotationSelector />
+                </StackLayout>
+                <StackLayout row="1">
+                    <ns:ScheduleList />
+                </StackLayout>
+            </GridLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>

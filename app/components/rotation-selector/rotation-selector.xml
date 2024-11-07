@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GridLayout rows="auto, auto" columns="*" class="p-4">
+    <StackLayout row="0">
+        <Label text="Select Start Date" class="text-lg mb-2" />
+        <DatePicker date="{{ startDate }}" dateChange="onDateSelected" class="mb-4" />
+    </StackLayout>
+    
+    <StackLayout row="1">
+        <Label text="Select Rotation Pattern" class="text-lg mb-2" />
+        <ListPicker items="{{ patterns }}" selectedIndex="0" 
+                   selectedIndexChange="onPatternSelected"
+                   class="mb-4" />
+    </StackLayout>
+</GridLayout>
